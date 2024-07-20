@@ -32,10 +32,10 @@ export default function Carousel() {
   return (
     <div
       id="default-carousel"
-      className="relative w-full "
+      className="relative w-full border-b-2 border-slate-200  "
       data-carousel="slide"
     >
-      <div className="relative h-56 md:h-96 overflow-hidden rounded-lg  my-5">
+      <div className="relative h-56 md:h-96 overflow-hidden rounded-lg    my-5">
         {images.map((src, index) => (
           <div
             key={index}
@@ -52,7 +52,7 @@ export default function Carousel() {
           </div>
         ))}
       </div>
-      <div className="absolute -bottom-0  z-10 flex -translate-x-1/2  left-1/2 space-x-3 rtl:space-x-reverse">
+      <div className="absolute -bottom-0 py-2  z-10 flex -translate-x-1/2  left-1/2 space-x-3 rtl:space-x-reverse">
         {images.map((_, index) => (
           <button
             key={index}
