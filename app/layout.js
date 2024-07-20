@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       <body className="bg-white ">
         <Header />
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   )
