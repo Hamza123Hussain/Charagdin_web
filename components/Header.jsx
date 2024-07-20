@@ -13,7 +13,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="  shadow-md shadow-slate-300 ">
+    <nav className="  shadow-md bg-gray-50 shadow-slate-300 sticky top-0 z-30 ">
       <div className=" flex justify-between items-center">
         <Link href="/" legacyBehavior>
           <a>
