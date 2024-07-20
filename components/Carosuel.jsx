@@ -49,20 +49,20 @@ const SwiperCarousel = () => {
         delay: 3000,
         disableOnInteraction: false,
       },
-      breakpoints: {
-        1920: {
-          slidesPerView: 1,
-          spaceBetween: 0,
-        },
-        1028: {
-          slidesPerView: 1,
-          spaceBetween: 0,
-        },
-        990: {
-          slidesPerView: 1,
-          spaceBetween: 0,
-        },
-      },
+      // breakpoints: {
+      //   1920: {
+      //     slidesPerView: 1,
+      //     spaceBetween: 0,
+      //   },
+      //   1028: {
+      //     slidesPerView: 1,
+      //     spaceBetween: 0,
+      //   },
+      //   990: {
+      //     slidesPerView: 1,
+      //     spaceBetween: 0,
+      //   },
+      // },
     })
   }, [])
 
@@ -89,22 +89,6 @@ const SwiperCarousel = () => {
           <div className="swiper-pagination"></div>
         </div>
       </div>
-      <style jsx>{`
-        .swiper-wrapper {
-          width: 100%;
-          height: max-content !important;
-          padding-bottom: 64px !important;
-          -webkit-transition-timing-function: linear !important;
-          transition-timing-function: linear !important;
-          position: relative;
-        }
-        .swiper-pagination-bullet {
-          background: #4f46e5;
-        }
-        .swiper-pagination-bullet-active {
-          background: #4f46e5 !important;
-        }
-      `}</style>
     </>
   )
 }
