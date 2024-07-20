@@ -4,11 +4,11 @@ import CategoryCard from './Category'
 
 const Categorypage = () => {
   return (
-    <div className=" p-2 mt-5">
+    <div className=" p-4 ">
       <h1 className=" font-extrabold text-2xl sm:text-4xl text-center sm:text-left sm:px-5">
         Product Categories
       </h1>
-      <div className="p-5 grid grid-cols-2 sm:grid-cols-4 mx-auto justify-center items-center gap-5">
+      <div className=" p-4 grid grid-cols-1  justify-center items-center gap-5">
         <CategoryCard />
         <CategoryCard />
         <CategoryCard />
