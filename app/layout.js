@@ -13,10 +13,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-white ">
+      <body className="bg-white">
         <Header />
         {children}
         <Footer />
+        <a
+          href="https://wa.me/03204016684" // Replace with your WhatsApp number
+          className="whatsapp_float"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/479px-WhatsApp_icon.png" // Ensure this image is in your public directory
+            alt="WhatsApp"
+            className="whatsapp_icon "
+          />
+        </a>
       </body>
     </html>
   )
