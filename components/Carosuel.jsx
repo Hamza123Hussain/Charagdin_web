@@ -8,27 +8,27 @@ Swiper.use([Pagination, Autoplay])
 
 const images = [
   {
-    src: 'https://www.hindustantimes.com/web-stories/hania-aamirs-note-worthy-ethnic-looks-_NIQlE3VcFMqP0zB05EX/assets/19.jpeg',
+    src: 'https://media.licdn.com/dms/image/D4E22AQHdCY49NizGhg/feedshare-shrink_800/0/1692537273395?e=2147483647&v=beta&t=pgGRSnucGMklifrrAoO0dTgmwrXRjOlyUM63u_P8MsQ',
     text: 'Nature Image 1',
   },
   {
-    src: 'https://jang.com.pk/assets/uploads/updates/2022-08-20/7870_9481837_Hania-Amir_updates.jpg',
+    src: 'https://media.licdn.com/dms/image/D4D22AQFn4Yj-VcpHtw/feedshare-shrink_800/0/1716219577943?e=2147483647&v=beta&t=vbA66Hkpusa41wE_cFOlp4ueY8YsafihYfxsKxMrxQs',
     text: 'Nature Image 2',
   },
   {
-    src: 'https://humenglish.com/wp-content/uploads/2024/05/hania-aamir-age-smk-mojo-222-Sadaan.jpg',
+    src: 'https://media.licdn.com/dms/image/D4D22AQGIQ1HI_UJ-FA/feedshare-shrink_2048_1536/0/1716219636662?e=2147483647&v=beta&t=QH057TIV9bSx8Qg6ZY-RmcmkMrXSrB-sQbsvoXVhyEA',
     text: 'Nature Image 3',
   },
   {
-    src: 'https://i.pinimg.com/736x/c5/4b/53/c54b53e6a18065b84d98fe2f65f05c08.jpg',
+    src: 'https://media.licdn.com/dms/image/D4E22AQETIcxG1RQB7A/feedshare-shrink_800/0/1693752721388?e=2147483647&v=beta&t=ErdW_-RgqPzLkQBvMkinao_2hP0_8K9PDLFhVKUr-rw',
     text: 'Nature Image 4',
   },
   {
-    src: 'https://img.mensxp.com/media/content/2023/Apr/hania-amir-health-15_642e89423fa1f.jpeg',
+    src: 'https://i.dawn.com/primary/2015/11/563a4ae51fd77.jpg',
     text: 'Nature Image 5',
   },
   {
-    src: 'https://st1.bollywoodlife.com/wp-content/uploads/2023/12/3-47.png?impolicy=Medium_Widthonly&w=400&h=711',
+    src: 'https://media.licdn.com/dms/image/D4D22AQGGRnKakZTdzg/feedshare-shrink_800/0/1716219507393?e=2147483647&v=beta&t=MXJkejNbRUDwHevyHhTEAghxZmpV4DBGVf2IARjwJH4',
     text: 'Nature Image 6',
   },
 ]
@@ -68,18 +68,18 @@ const SwiperCarousel = () => {
 
   return (
     <>
-      <div className="w-full relative">
+      <div className="w-full relative mt-5">
         <div className="swiper centered-slide-carousel swiper-container relative">
           <div className="swiper-wrapper">
             {images.map((image, index) => (
               <div key={index} className="swiper-slide">
-                <div className=" rounded-2xl  flex flex-col justify-center items-center">
+                <div className=" h-[50vh] sm:h-[100vh] sm:w-[40vw] w-[100vw]  rounded-lg  flex flex-col justify-center items-center border-2">
                   <img
                     src={image.src}
                     alt={`Slide ${index + 1}`}
-                    className="rounded-2xl sm:w-[90vw] w-[100vw] h-[50vh] sm:h-[100vh]"
+                    className="rounded-t-lg w-full h-[90vh] "
                   />
-                  <span className="text-3xl mn-5 font-semibold text-indigo-600">
+                  <span className="text-3xl mn-5 p-4  text-center font-semibold text-indigo-600">
                     {image.text}
                   </span>
                 </div>
