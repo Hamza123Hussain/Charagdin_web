@@ -51,12 +51,12 @@ const SwiperCarousel = () => {
       },
       breakpoints: {
         1920: {
-          slidesPerView: 4,
-          spaceBetween: 30,
+          slidesPerView: 1,
+          spaceBetween: 0,
         },
         1028: {
-          slidesPerView: 2,
-          spaceBetween: 10,
+          slidesPerView: 1,
+          spaceBetween: 0,
         },
         990: {
           slidesPerView: 1,
@@ -73,11 +73,11 @@ const SwiperCarousel = () => {
           <div className="swiper-wrapper">
             {images.map((image, index) => (
               <div key={index} className="swiper-slide">
-                <div className=" hover:border-black hover:shadow-md hover:shadow-blue-100 h-[70vh] sm:h-[110vh] sm:w-[40vw] w-[100vw]  rounded-lg  flex flex-col justify-center items-center border-2">
+                <div className="   flex flex-col justify-center items-center">
                   <img
                     src={image.src}
                     alt={`Slide ${index + 1}`}
-                    className="rounded-t-lg  h-full w-full "
+                    className="rounded-t-lg  h-[50vh] w-[70vw]  sm:h-[90vh] hover:border-black hover:shadow-md border-2 hover:shadow-blue-100  rounded-lg "
                   />
                   <span className="text-3xl mt-5 p-4  text-center font-semibold text-indigo-600">
                     {image.text}
