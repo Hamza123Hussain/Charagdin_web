@@ -13,8 +13,8 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="  shadow-md bg-gray-50 shadow-slate-300 sticky top-0 z-30 ">
-      <div className=" flex justify-between items-center">
+    <nav className="shadow-md bg-gray-50 shadow-slate-300 sticky top-0 z-30">
+      <div className="flex justify-between items-center">
         <Link href="/" legacyBehavior>
           <a>
             <Image
@@ -28,29 +28,25 @@ export default function Navbar() {
         </Link>
 
         <div className="hidden md:flex text-2xl space-x-6 px-2 text-slate-500">
-          <Link
-            className="hover:brightness-110 bg-transparent hover:text-black"
-            href="/"
-          >
-            Home
+          <Link href="/" legacyBehavior>
+            <a className="hover:brightness-110 bg-transparent hover:text-black">
+              Home
+            </a>
           </Link>
-          <Link
-            className="hover:brightness-110 bg-transparent hover:text-black"
-            href="/"
-          >
-            Products
+          <Link href="/products" legacyBehavior>
+            <a className="hover:brightness-110 bg-transparent hover:text-black">
+              Products
+            </a>
           </Link>
-          <Link
-            className="hover:brightness-110 bg-transparent hover:text-black"
-            href="/"
-          >
-            Contact Us
+          <Link href="/contact" legacyBehavior>
+            <a className="hover:brightness-110 bg-transparent hover:text-black">
+              Contact Us
+            </a>
           </Link>
-          <Link
-            className="hover:brightness-110 bg-transparent hover:text-black"
-            href="/"
-          >
-            About
+          <Link href="/About" legacyBehavior>
+            <a className="hover:brightness-110 bg-transparent hover:text-black">
+              About
+            </a>
           </Link>
         </div>
         <div className="md:hidden px-2">
@@ -60,30 +56,26 @@ export default function Navbar() {
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden bg-white  text-slate-500 flex flex-col space-y-4 p-4">
-          <Link
-            className="hover:brightness-110 bg-transparent hover:text-black"
-            href="/"
-          >
-            Home
+        <div className="md:hidden bg-white text-slate-500 flex flex-col space-y-4 p-4">
+          <Link href="/" legacyBehavior>
+            <a className="hover:brightness-110 bg-transparent hover:text-black">
+              Home
+            </a>
           </Link>
-          <Link
-            className="hover:brightness-110 bg-transparent hover:text-black"
-            href="/"
-          >
-            Products
+          <Link href="/products" legacyBehavior>
+            <a className="hover:brightness-110 bg-transparent hover:text-black">
+              Products
+            </a>
           </Link>
-          <Link
-            className="hover:brightness-110 bg-transparent hover:text-black"
-            href="/"
-          >
-            Contact Us
+          <Link href="/contact" legacyBehavior>
+            <a className="hover:brightness-110 bg-transparent hover:text-black">
+              Contact Us
+            </a>
           </Link>
-          <Link
-            className="hover:brightness-110 bg-transparent hover:text-black"
-            href="/"
-          >
-            About
+          <Link href="/About" legacyBehavior>
+            <a className="hover:brightness-110 bg-transparent hover:text-black">
+              About
+            </a>
           </Link>
         </div>
       )}
