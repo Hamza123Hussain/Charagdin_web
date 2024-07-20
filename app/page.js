@@ -1,5 +1,6 @@
 import BestSellers from '@/components/BestSellers'
 import Carousel from '@/components/Carosuel'
+import Categorypage from '@/components/Categorypage'
 import Image from 'next/image'
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <>
       <Carousel />
       <BestSellers />
+      <Categorypage />
     </>
   )
 }
