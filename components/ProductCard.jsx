@@ -2,7 +2,7 @@ import Image from 'next/image'
 import pic from '../public/Pic.jpg'
 export default function BlogCard() {
   return (
-    <div className="w-fit flex flex-col justify-center  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div className="w-fit flex hover:shadow-slate-500 flex-col justify-center  bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
       <a href="#">
         <Image className="rounded-t-lg" src={pic} width={400} height={225} />
       </a>
