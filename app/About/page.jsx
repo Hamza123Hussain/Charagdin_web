@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import React from 'react'
 import LOGO from '../../public/LOGO-removebg-preview.png'
+import SwiperCarousel from '@/components/Carosuel'
 const About = () => {
   return (
     <div className="p-2 sm:p-8 bg-gray-50">
@@ -71,6 +72,9 @@ const About = () => {
           Pakistan.
         </p>
       </div>
+
+      <h1>Our clients</h1>
+      <SwiperCarousel />
     </div>
   )
 }
