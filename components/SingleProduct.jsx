@@ -19,7 +19,7 @@ const SingleProduct = () => {
           title="Cozy Sofa"
           style={{ objectFit: 'cover' }}
         />
-        <CardContent>
+        <div className=" pl-4">
           <Typography gutterBottom variant="h5" component="div">
             Cozy Sofa
           </Typography>
@@ -27,12 +27,11 @@ const SingleProduct = () => {
             Experience ultimate comfort with our Cozy Sofa. Its plush cushions
             and elegant design make it the perfect addition to any living room.
           </Typography>
-        </CardContent>
-        <CardActions>
-          <Button size="small" variant="contained" color="primary">
+
+          <Button size="medium" variant="contained" color="success">
             PRICE Rs 200
           </Button>
-        </CardActions>
+        </div>
       </Card>
     </div>
   )
