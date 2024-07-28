@@ -20,15 +20,22 @@ const SingleProduct = () => {
           style={{ objectFit: 'cover' }}
         />
         <div className=" pl-4">
-          <Typography gutterBottom variant="h5" component="div">
-            Cozy Sofa
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Experience ultimate comfort with our Cozy Sofa. Its plush cushions
-            and elegant design make it the perfect addition to any living room.
-          </Typography>
-
-          <Button size="medium" variant="contained" color="success">
+          <div className=" my-3">
+            <Typography gutterBottom variant="h5" component="div">
+              Cozy Sofa
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Experience ultimate comfort with our Cozy Sofa. Its plush cushions
+              and elegant design make it the perfect addition to any living
+              room.
+            </Typography>
+          </div>
+          <Button
+            className=" mb-2"
+            size="medium"
+            variant="contained"
+            color="success"
+          >
             PRICE Rs 200
           </Button>
         </div>
