@@ -5,12 +5,12 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <>
-      <div className=" p-4">
+      <div className=" dark:bg-white p-4">
         <Carousel />
       </div>
-      <div className=" p-4">
+      <div className=" dark:bg-white p-4">
         {' '}
-        <h1 className=" mb-5 text-3xl font-extrabold text-center sm:text-left">
+        <h1 className="dark:bg-white mb-5 text-3xl font-extrabold text-center sm:text-left">
           Best Sellers
         </h1>
         <Carousel />
