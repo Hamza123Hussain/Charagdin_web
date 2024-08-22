@@ -7,8 +7,8 @@ import SwiperCarousel from '@/components/Carosuel'
 
 const About = () => {
   return (
-    <div className="p-4 sm:p-8 bg-gray-50">
-      <div className="flex flex-col sm:flex-row gap-5 justify-center items-center mb-10">
+    <div className="p-4 sm:p-8 bg-gray-50 text-black">
+      <div className="flex flex-col sm:flex-row gap-5 justify-center items-center mb-10 ">
         <Image src={LOGO} width={200} height={200} alt="logo" />
       </div>
       <div className="max-w-4xl mx-auto text-lg leading-relaxed">
