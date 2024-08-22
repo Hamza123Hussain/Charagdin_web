@@ -5,7 +5,7 @@ import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
-const SingleProduct = () => {
+const SingleProduct = ({ element }) => {
   return (
     <div className=" flex ">
       <Card
@@ -15,14 +15,14 @@ const SingleProduct = () => {
         <CardMedia
           component="img"
           height="200"
-          image="https://www.renome.pk/wp-content/uploads/2022/03/Cozy-Sofa-21500-38000-54500-1.jpg"
+          image={element.ImageUrl}
           title="Cozy Sofa"
           style={{ objectFit: 'cover' }}
         />
 
         <div className=" my-3 pl-4">
           <Typography gutterBottom variant="h5" component="div">
-            Cozy Sofa
+            {element.Name}
           </Typography>
           <Typography variant="body2" color="text.secondary">
             Experience ultimate comfort with our Cozy Sofa. Its plush cushions
