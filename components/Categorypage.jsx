@@ -20,7 +20,7 @@ const Categorypage = () => {
   }, [])
   if (loading) return <Loader />
   return (
-    <div className=" p-4 ">
+    <div className=" p-4 dark:bg-white dark:text-black ">
       <h1 className=" font-extrabold text-2xl sm:text-4xl text-center sm:text-left sm:px-5">
         Product Categories
       </h1>
