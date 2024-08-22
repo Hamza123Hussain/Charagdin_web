@@ -10,7 +10,7 @@ const SingleProduct = () => {
     <div className=" flex ">
       <Card
         sx={{ maxWidth: 345, boxShadow: 3 }}
-        className="hover:shadow-lg transition-shadow duration-300"
+        className="hover:shadow-lg transition-shadow duration-300 rounded-t-xl mx-auto"
       >
         <CardMedia
           component="img"
@@ -19,25 +19,24 @@ const SingleProduct = () => {
           title="Cozy Sofa"
           style={{ objectFit: 'cover' }}
         />
-        <div className=" pl-4">
-          <div className=" my-3">
-            <Typography gutterBottom variant="h5" component="div">
-              Cozy Sofa
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Experience ultimate comfort with our Cozy Sofa. Its plush cushions
-              and elegant design make it the perfect addition to any living
-              room.
-            </Typography>
-          </div>
-          <Button
-            className=" mb-2"
-            size="medium"
-            variant="contained"
-            color="success"
-          >
-            PRICE Rs 200
-          </Button>
+
+        <div className=" my-3 pl-4">
+          <Typography gutterBottom variant="h5" component="div">
+            Cozy Sofa
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            Experience ultimate comfort with our Cozy Sofa. Its plush cushions
+            and elegant design make it the perfect addition to any living room.
+          </Typography>
+        </div>
+        <div className="flex items-center justify-center gap-2 w-full ">
+          {' '}
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/479px-WhatsApp_icon.png"
+            alt=""
+            width={50}
+          />{' '}
+          <h1 className="text-lg font-extrabold ">Call For Price</h1>
         </div>
       </Card>
     </div>
