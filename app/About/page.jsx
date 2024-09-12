@@ -69,10 +69,10 @@ const About = () => {
           Pakistan.
         </p>
       </div>
-      <h1 className="text-3xl sm:text-4xl font-bold text-center text-indigo-600 mt-12 mb-6">
+      {/* <h1 className="text-3xl sm:text-4xl font-bold text-center text-indigo-600 mt-12 mb-6">
         Our Clients
       </h1>
-      <SwiperCarousel />
+      <SwiperCarousel /> */}
     </div>
   )
 }
