@@ -35,7 +35,7 @@ export default function Navbar() {
           </Link>
           <Link href="/products" legacyBehavior>
             <a className="hover:brightness-110 bg-transparent hover:text-black">
-              Products
+              Catagories
             </a>
           </Link>
           <Link href="/contact" legacyBehavior>

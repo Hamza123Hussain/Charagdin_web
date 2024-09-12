@@ -7,7 +7,6 @@ export default function CategoryCard({ element }) {
         alt={element.Name}
         className="w-full h-[70vh]"
       />
-
       <div className="p-4">
         <h2 className="text-xl font-semibold text-gray-900 mb-2">
           {element.Name}

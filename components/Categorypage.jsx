@@ -4,6 +4,7 @@ import CategoryCard from './Category'
 import { fetchCatogories } from '@/functions/CRUD/Catorgories/Fetch'
 import Loader from './Loader'
 import { useRouter } from 'next/navigation'
+import Loader2 from './Loader2'
 const Categorypage = () => {
   const [Category, SetCategory] = useState([])
   const Router = useRouter()
@@ -19,7 +20,7 @@ const Categorypage = () => {
     }
     GetCatogory()
   }, [])
-  if (loading) return <Loader />
+  if (loading) return <Loader2 />
   return (
     <div className="p-6 bg-gray-100">
       <h1 className="text-3xl font-bold text-gray-800 mb-6">Categories</h1>
