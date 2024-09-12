@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from '@mui/material/Card'
 
-const ProductCard = ({ params }) => {
+const Product = ({ params }) => {
   return (
     <div className=" flex ">
       <Card className="hover:shadow-lg transition-shadow duration-300 rounded-t-xl mx-auto">
@@ -31,4 +31,4 @@ const ProductCard = ({ params }) => {
   )
 }
 
-export default ProductCard
+export default Product

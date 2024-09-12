@@ -1,4 +1,5 @@
 'use client'
+import { useRouter } from 'next/navigation'
 import React, { useEffect } from 'react'
 import Swiper from 'swiper'
 import { Pagination, Autoplay } from 'swiper/modules'
@@ -35,38 +36,7 @@ const images = [
 ]
 
 const BestSellers = () => {
-  useEffect(() => {
-    const swiper = new Swiper('.centered-slide-carousel', {
-      centeredSlides: true,
-      paginationClickable: true,
-      loop: true,
-      spaceBetween: 30,
-      slideToClickedSlide: true,
-      pagination: {
-        el: '.centered-slide-carousel .swiper-pagination',
-        clickable: true,
-      },
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-      // breakpoints: {
-      //   1920: {
-      //     slidesPerView: 1,
-      //     spaceBetween: 0,
-      //   },
-      //   1028: {
-      //     slidesPerView: 1,
-      //     spaceBetween: 0,
-      //   },
-      //   990: {
-      //     slidesPerView: 1,
-      //     spaceBetween: 0,
-      //   },
-      // },
-    })
-  }, [])
-
+  const Router = useRouter()
   return (
     <>
       <div className="w-full relative mt-5">
@@ -74,7 +44,13 @@ const BestSellers = () => {
           <div className="swiper-wrapper">
             {images.map((image, index) => (
               <div key={index} className="swiper-slide">
-                <div className="   flex flex-col justify-center items-center">
+                <div
+                  onClick={() =>
+                    Router.push(`/Product/${image.ID}
+                  `)
+                  }
+                  className="   flex flex-col justify-center items-center cursor-pointer"
+                >
                   <img
                     src={image.src}
                     alt={`Slide ${index + 1}`}
