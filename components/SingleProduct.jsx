@@ -9,7 +9,7 @@ const SingleProduct = ({ element }) => {
   return (
     <div className=" flex ">
       <Card className="hover:shadow-lg transition-shadow duration-300 rounded-t-xl mx-auto">
-        <img src={element.ImageUrl} className=" h-96 w-full" />
+        <img src={element.ImageUrl} className=" h-96 w-96" />
 
         <div className=" my-3 px-2 ">
           <h6>{element.Name}</h6>
