@@ -1,14 +1,14 @@
 import React from 'react'
 import Card from '@mui/material/Card'
 
-const ProductCard = ({ element }) => {
+const ProductCard = ({ params }) => {
   return (
     <div className=" flex ">
       <Card className="hover:shadow-lg transition-shadow duration-300 rounded-t-xl mx-auto">
-        <img src={element.ImageUrl} className=" h-96 w-96" />
+        <img src={params.element.ImageUrl} className=" h-96 w-96" />
 
         <div className=" my-3 px-2 ">
-          <h6>{element.Name}</h6>
+          <h6>{params.element.Name}</h6>
         </div>
         <div className="flex items-center justify-center gap-2 w-full ">
           {' '}
