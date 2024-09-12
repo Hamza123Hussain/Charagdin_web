@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <a
-          href="https://wa.me/YOUR_PHONE_NUMBER" // Replace with your WhatsApp number
+          href="https://wa.me/+92 314 4058071" // Replace with your WhatsApp number
           className="fixed bottom-10 right-2  shadow-green-400  bg-green-500 text-white rounded-full flex items-center justify-center shadow-lg z-50 hover:bg-green-600 transition duration-300"
           target="_blank"
           rel="noopener noreferrer"
