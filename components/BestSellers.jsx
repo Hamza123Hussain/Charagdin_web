@@ -8,23 +8,23 @@ Swiper.use([Pagination, Autoplay])
 
 const images = [
   {
-    src: '/1.jpg',
+    src: '/7.jpg',
     text: 'Nature Image 1',
   },
   {
-    src: '/2.jpg',
+    src: '/9.jpg',
     text: 'Nature Image 2',
   },
   {
-    src: '/3.jpg',
+    src: '/10.jpg',
     text: 'Nature Image 3',
   },
   {
-    src: '/5.jpg',
+    src: '/4.jpg',
     text: 'Nature Image 5',
   },
   {
-    src: '/6.jpg',
+    src: '/8.jpg',
     text: 'Nature Image 6',
   },
 ]
