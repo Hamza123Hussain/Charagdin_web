@@ -10,22 +10,27 @@ const images = [
   {
     src: '/1.jpg',
     text: 'The Flow Desk',
+    ID: '839177ce-ac54-4afb-94c5-d078e44ebb7b',
   },
   {
     src: '/2.jpg',
     text: 'Ellipse Elite',
+    ID: 'f35cd38e-1b91-4f05-9653-3058baebdaf6',
   },
   {
     src: '/3.jpg',
     text: 'The Skyline Executive',
+    ID: 'b333d0bb-786f-4b03-8bcc-2fcdc2a983b8',
   },
   {
     src: '/5.jpg',
     text: 'The Monochrome Muse',
+    ID: '3fbb6be4-1644-4ad5-a6d8-d9fd5ea6feaa',
   },
   {
     src: '/6.jpg',
     text: 'Spia',
+    ID: '055475c6-7552-4f35-b47a-4c37bc9bd867',
   },
 ]
 
