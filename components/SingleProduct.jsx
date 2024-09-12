@@ -8,17 +8,8 @@ import Typography from '@mui/material/Typography'
 const SingleProduct = ({ element }) => {
   return (
     <div className=" flex ">
-      <Card
-        sx={{ maxWidth: 345, boxShadow: 3 }}
-        className="hover:shadow-lg transition-shadow duration-300 rounded-t-xl mx-auto"
-      >
-        <CardMedia
-          component="img"
-          height="200"
-          image={element.ImageUrl}
-          title="Cozy Sofa"
-          style={{ objectFit: 'cover' }}
-        />
+      <Card className="hover:shadow-lg transition-shadow duration-300 rounded-t-xl mx-auto">
+        <img src={element.ImageUrl} className=" h-96 w-full" />
 
         <div className=" my-3 pl-4">
           <Typography gutterBottom variant="h5" component="div">

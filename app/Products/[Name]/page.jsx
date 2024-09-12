@@ -26,10 +26,10 @@ export default function MediaCard({ params }) {
   return (
     <div className=" p-10 bg-white">
       {' '}
-      <h1 className=" text-center text-6xl text-black font-extrabold">
-        {params.Name}s
+      <h1 className=" text-center text-xl sm:text-2xl md:text-4xl lg:text-6xl text-black font-extrabold">
+        {decodeURIComponent(params.Name)}
       </h1>
-      <div className=" grid grid-cols-1 sm:grid-cols-4 mx-auto gap-5">
+      <div className=" grid grid-cols-1 sm:grid-cols-4 mx-auto gap-5 my-3">
         {ProductData.map((element, index) => {
           return <SingleProduct element={element} key={index} />
         })}

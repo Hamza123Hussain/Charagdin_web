@@ -3,9 +3,10 @@ import React, { useEffect, useState } from 'react'
 import CategoryCard from './Category'
 import { fetchCatogories } from '@/functions/CRUD/Catorgories/Fetch'
 import Loader from './Loader'
-
+import { useRouter } from 'next/navigation'
 const Categorypage = () => {
   const [Category, SetCategory] = useState([])
+  const Router = useRouter()
   const [loading, Setloading] = useState(false)
   useEffect(() => {
     const GetCatogory = async () => {
@@ -20,14 +21,15 @@ const Categorypage = () => {
   }, [])
   if (loading) return <Loader />
   return (
-    <div className=" p-4 dark:bg-white dark:text-black ">
-      <h1 className=" font-extrabold text-2xl sm:text-4xl text-center sm:text-left sm:px-5">
-        Product Categories
-      </h1>
-      <div className=" p-4 grid grid-cols-1 sm:grid-cols-3   justify-center items-center gap-5">
-        {Category.map((element, index) => {
+    <div className="p-6 bg-gray-100">
+      <h1 className="text-3xl font-bold text-gray-800 mb-6">Categories</h1>
+      <div className=" p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {Category.map((element) => {
           return (
-            <div key={element.ID}>
+            <div
+              onClick={() => Router.push(`/Products/${element.Name}`)}
+              key={element.ID}
+            >
               <CategoryCard element={element} />
             </div>
           )
@@ -36,5 +38,4 @@ const Categorypage = () => {
     </div>
   )
 }
-
 export default Categorypage
