@@ -11,14 +11,8 @@ const SingleProduct = ({ element }) => {
       <Card className="hover:shadow-lg transition-shadow duration-300 rounded-t-xl mx-auto">
         <img src={element.ImageUrl} className=" h-96 w-full" />
 
-        <div className=" my-3 pl-4">
-          <Typography gutterBottom variant="h5" component="div">
-            {element.Name}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Experience ultimate comfort with our Cozy Sofa. Its plush cushions
-            and elegant design make it the perfect addition to any living room.
-          </Typography>
+        <div className=" my-3 px-2 ">
+          <h6>{element.Name}</h6>
         </div>
         <div className="flex items-center justify-center gap-2 w-full ">
           {' '}
