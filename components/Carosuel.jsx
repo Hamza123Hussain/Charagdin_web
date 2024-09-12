@@ -74,13 +74,13 @@ const SwiperCarousel = () => {
           <div className="swiper-wrapper">
             {images.map((image, index) => (
               <div key={index} className="swiper-slide">
-                <div className="   flex flex-col justify-center items-center">
+                <div className=" cursor-pointer   flex flex-col justify-center items-center">
                   <img
                     src={image.src}
                     alt={`Slide ${index + 1}`}
                     className="rounded-t-lg h-96 w-[50vw]  hover:border-black hover:shadow-md border-2 hover:shadow-blue-100  rounded-lg "
                   />
-                  <span className="text-3xl mt-5 p-4  text-center font-semibold text-indigo-600">
+                  <span className="text-3xl mt-5 p-4  text-center font-semibold text-green-600">
                     {image.text}
                   </span>
                 </div>
