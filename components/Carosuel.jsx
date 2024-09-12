@@ -78,7 +78,7 @@ const SwiperCarousel = () => {
                   <img
                     src={image.src}
                     alt={`Slide ${index + 1}`}
-                    className="rounded-t-lg h-96 w-[50vw]  hover:border-black hover:shadow-md border-2 hover:shadow-blue-100  rounded-lg "
+                    className="rounded-t-lg h-96 w-96  hover:border-black hover:shadow-md border-2 hover:shadow-blue-100  rounded-lg "
                   />
                   <span className="text-3xl mt-5 p-4  text-center font-semibold text-green-600">
                     {image.text}
