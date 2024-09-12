@@ -1,25 +1,34 @@
-import Image from 'next/image'
-import pic from '../public/Pic.jpg'
-export default function BlogCard() {
+import React from 'react'
+import Card from '@mui/material/Card'
+
+const ProductCard = ({ element }) => {
   return (
-    //dark:bg-gray-800 dark:border-gray-700
-    <div className="w-fit flex hover:shadow-slate-500 flex-col justify-center  bg-white border border-gray-200 rounded-lg shadow-md ">
-      <a href="#">
-        <Image className="rounded-t-lg" src={pic} width={400} height={225} />
-      </a>
-      <div className=" p-1">
-        <h3 className="text-[15px] lg:text-xl font-bold tracking-tight text-slate-700 dark:text-white">
-          Charagdin Product
-        </h3>
-        <div
-          className=" flex justify-end px-2 
-        "
-        >
-          <h3 className="text-[15px] lg:text-xl font-bold tracking-tight text-slate-700 dark:text-white">
-            Rs 20000
-          </h3>
+    <div className=" flex ">
+      <Card className="hover:shadow-lg transition-shadow duration-300 rounded-t-xl mx-auto">
+        <img src={element.ImageUrl} className=" h-96 w-96" />
+
+        <div className=" my-3 px-2 ">
+          <h6>{element.Name}</h6>
         </div>
-      </div>
+        <div className="flex items-center justify-center gap-2 w-full ">
+          {' '}
+          <a
+            href="https://wa.me/0314 4058071" // Replace with your WhatsApp number
+            className="fixed bottom-10 right-2  shadow-green-400  bg-green-500 text-white rounded-full flex items-center justify-center shadow-lg z-50 hover:bg-green-600 transition duration-300"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/479px-WhatsApp_icon.png" // Ensure this image is in your public directory
+              alt="WhatsApp"
+              className="w-16 sm:w-12 p-1 "
+            />
+          </a>
+          <h1 className="text-lg font-extrabold ">Call For Price</h1>
+        </div>
+      </Card>
     </div>
   )
 }
+
+export default ProductCard
