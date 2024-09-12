@@ -13,7 +13,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="shadow-md bg-gray-50 shadow-slate-300 sticky top-0 z-30">
+    <nav className="shadow-md bg-gray-50 shadow-slate-300 sticky top-0 z-30 px-4">
       <div className="flex justify-between items-center">
         <Link href="/" legacyBehavior>
           <a>
@@ -22,12 +22,12 @@ export default function Navbar() {
               width={100}
               height={100}
               alt="logo"
-              className="w-24 h-auto md:w-32"
+              className="w-24 h-auto md:w-24"
             />
           </a>
         </Link>
 
-        <div className="hidden md:flex text-2xl space-x-6 px-2 text-slate-500">
+        <div className="hidden md:flex text-xl space-x-6 px-2 text-slate-500">
           <Link href="/" legacyBehavior>
             <a className="hover:brightness-110 bg-transparent hover:text-black">
               Home
