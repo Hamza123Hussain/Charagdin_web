@@ -9,23 +9,23 @@ Swiper.use([Pagination, Autoplay])
 const images = [
   {
     src: '/1.jpg',
-    text: 'Nature Image 1',
+    text: 'The Flow Desk',
   },
   {
     src: '/2.jpg',
-    text: 'Nature Image 2',
+    text: 'Ellipse Elite',
   },
   {
     src: '/3.jpg',
-    text: 'Nature Image 3',
+    text: 'The Skyline Executive',
   },
   {
     src: '/5.jpg',
-    text: 'Nature Image 5',
+    text: 'The Monochrome Muse',
   },
   {
     src: '/6.jpg',
-    text: 'Nature Image 6',
+    text: 'Spia',
   },
 ]
 
