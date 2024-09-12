@@ -38,11 +38,11 @@ export default function Navbar() {
               Catagories
             </a>
           </Link>
-          <Link href="/contact" legacyBehavior>
+          {/* <Link href="/contact" legacyBehavior>
             <a className="hover:brightness-110 bg-transparent hover:text-black">
               Contact Us
             </a>
-          </Link>
+          </Link> */}
           <Link href="/About" legacyBehavior>
             <a className="hover:brightness-110 bg-transparent hover:text-black">
               About
@@ -62,16 +62,16 @@ export default function Navbar() {
               Home
             </a>
           </Link>
-          <Link href="/products" legacyBehavior>
+          <Link href="/Catagories" legacyBehavior>
             <a className="hover:brightness-110 bg-transparent hover:text-black">
-              Products
+              Catagories
             </a>
           </Link>
-          <Link href="/contact" legacyBehavior>
+          {/* <Link href="/contact" legacyBehavior>
             <a className="hover:brightness-110 bg-transparent hover:text-black">
               Contact Us
             </a>
-          </Link>
+          </Link> */}
           <Link href="/About" legacyBehavior>
             <a className="hover:brightness-110 bg-transparent hover:text-black">
               About
