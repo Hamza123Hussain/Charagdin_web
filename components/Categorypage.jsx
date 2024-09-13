@@ -28,6 +28,7 @@ const Categorypage = () => {
         {Category.map((element) => {
           return (
             <div
+              className=" cursor-pointer"
               onClick={() => Router.push(`/Products/${element.Name}`)}
               key={element.ID}
             >
