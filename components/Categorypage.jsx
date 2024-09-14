@@ -22,9 +22,9 @@ const Categorypage = () => {
   }, [])
   if (loading) return <Loader2 />
   return (
-    <div className="p-6 bg-gray-100">
+    <div className=" p-6  bg-gray-100">
       <h1 className="text-3xl font-bold text-gray-800 mb-6">Categories</h1>
-      <div className=" p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 p-4">
         {Category.map((element) => {
           return (
             <div
