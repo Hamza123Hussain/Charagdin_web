@@ -26,7 +26,7 @@ const Product = ({ params }) => {
   return (
     <div className=" flex bg-white ">
       <Card className="hover:shadow-lg transition-shadow duration-300 rounded-lg mx-auto my-10">
-        <img src={Data.ImageUrl} className=" h-96 w-96" />
+        <img src={Data.ImageUrl} className=" sm:h-96 sm:w-96 h-60 w-60" />
 
         <div className=" my-3 px-2 font-extrabold ">
           <h6>{Data.Name}</h6>
