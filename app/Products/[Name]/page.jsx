@@ -29,7 +29,7 @@ export default function MediaCard({ params }) {
       <h1 className=" text-center mb-16 text-3xl sm:text-7xl md:text-7xl  text-black font-extrabold">
         {decodeURIComponent(params.Name)}
       </h1>
-      <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3   mx-auto gap-5 my-3">
+      <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2  xl:grid-cols-3   mx-auto gap-16 my-3">
         {ProductData.map((element, index) => {
           return <SingleProduct element={element} key={index} />
         })}
