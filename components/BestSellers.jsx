@@ -56,7 +56,7 @@ const BestSellers = () => {
                     alt={`Slide ${index + 1}`}
                     className="rounded-t-lg sm:h-96 h-60 w-96  hover:border-black hover:shadow-md border-2 hover:shadow-blue-100  rounded-lg "
                   />
-                  <span className="text-3xl mt-5 p-4  text-center font-semibold text-green-600">
+                  <span className="text-2xl sm:text-3xl mt-5 p-4  text-center font-semibold text-green-600">
                     {image.text}
                   </span>
                 </div>
